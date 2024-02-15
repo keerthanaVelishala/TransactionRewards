@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "507e2447-843c-4494-b2e7-95db816ccb29",
+		"name": "TransactionsRewards",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "9136085"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/calculaterewards/rewards/summary/monthly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/calculaterewards/rewards/summary/monthly"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/calculaterewards/rewards/summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/calculaterewards/rewards/summary"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/calculaterewards/rewards/customers/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/calculaterewards/rewards/customers/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/calculaterewards/rewards/customers/1/monthly?month=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/calculaterewards/rewards/customers/1/monthly?month=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculaterewards",
+						"rewards",
+						"customers",
+						"1",
+						"monthly"
+					],
+					"query": [
+						{
+							"key": "month",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
