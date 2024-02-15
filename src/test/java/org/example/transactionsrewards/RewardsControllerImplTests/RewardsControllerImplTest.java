@@ -52,7 +52,7 @@ public class RewardsControllerImplTest {
 
         when(rewardsService.findTotalPointsByCustomerAndMonth(any())).thenReturn(new HashMap<>());
 
-        mockMvc.perform(get("/calculaterewards/totalrewardseachcustomereachmonth"))
+        mockMvc.perform(get("/calculaterewards/rewards/summary/monthly"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON));
     }
